@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2></h2>
+
+<pre class="brush: csharp;">
+@@using (Html.BeginForm())
+{
+    @@Html.TextArea("sampleCode", (string)ViewBag.sampleCode, new { rows = "20", cols = "120" })
+    <input type="submit" />
+
+}
+</pre>
+
